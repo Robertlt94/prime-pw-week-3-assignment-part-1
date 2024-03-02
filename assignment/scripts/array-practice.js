@@ -7,14 +7,20 @@ console.log('--- 1. Practice creating arrays ---');
 let animalArray = ['fish', 'cat', 'bird', 'dog'];
 console.log('Animals are: ', animalArray);
 
-let magicalCreatures = [ 'dragon', 'unicorn', 'phoenix',]
+let magicalCreatures = ['dragon', 'unicorn', 'phoenix']
+console.log( "there are " + magicalCreatures.length + " magical creatures and they are " + magicalCreatures );
+console.log('Magical Creatures: ', magicalCreatures);
 
 // 1.a. TODO: Make an array with some favorite foods
 let favoriteFoods = ['pizza', 'spicy', 'sashimi', 'steak'];
 
+let myFavoriteFoods = ["steak", "pork belly", "chicken wings"];
+
 // 1.b. TODO: Log your array of foods to the console with a message, similar 
 //      to the example above
 console.log('Favorite Foods are ', favoriteFoods);
+
+console.log("There are " + myFavoriteFoods.length + " foods that I like to eat and they are " + myFavoriteFoods + ".");
 
 // 2. Array.length - tells you how many items are in the array
 console.log('--- 2. Length of an array ---');
@@ -22,8 +28,12 @@ console.log('--- 2. Length of an array ---');
 // Example: How many animals are in the array? 
 console.log('Number of animals:', animalArray.length);
 
+console.log('Number of creatures: ', magicalCreatures.length);
+
 // 2.a. TODO: Log to the console the number of foods in your array
 console.log('I have ', favoriteFoods.length, ' favorite foods');
+
+console.log('I have ', myFavoriteFoods.length, ' favorite foods.');
 
 // 3. Accessing array items
 console.log('--- 3. Accessing items in an array ---');
@@ -91,18 +101,16 @@ console.log(favoriteFoods);
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
-for(i=0; i<favoriteFoods.length; i++){
-    console.log(favoriteFoods[i]);
-}
+console.log(favoriteFoods.reverse());
+
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
-for(i=0; i<favoriteFoods.length; i++){
-    foodString = (favoriteFoods[i] + 'and');
-    console.log(foodString);
-}
+console.log(favoriteFoods.join(" and "));
+
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+console.log(favoriteFoods.concat(animalArray));
