@@ -7,6 +7,8 @@ console.log('--- 1. Practice creating arrays ---');
 let animalArray = ['fish', 'cat', 'bird', 'dog'];
 console.log('Animals are: ', animalArray);
 
+let magicalCreatures = [ 'dragon', 'unicorn', 'phoenix',]
+
 // 1.a. TODO: Make an array with some favorite foods
 let favoriteFoods = ['pizza', 'spicy', 'sashimi', 'steak'];
 
